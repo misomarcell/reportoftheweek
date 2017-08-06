@@ -45,7 +45,13 @@ namespace RunningOnEmpty
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int icon = 2130837504;
+			public const int closed = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int normal = 2130837506;
 			
 			static Drawable()
 			{
@@ -60,11 +66,14 @@ namespace RunningOnEmpty
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int linearLayout1 = 2131099648;
-			
 			// aapt resource value: 0x7f060001
-			public const int textView1 = 2131099649;
+			public const int imageView1 = 2131099649;
+			
+			// aapt resource value: 0x7f060000
+			public const int relativeLayout1 = 2131099648;
+			
+			// aapt resource value: 0x7f060002
+			public const int textView1 = 2131099650;
 			
 			static Id()
 			{
@@ -102,7 +111,10 @@ namespace RunningOnEmpty
 			public const int runningonempty = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int thisis = 2130968578;
+			public const int thankyou = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int thisis = 2130968579;
 			
 			static Raw()
 			{
