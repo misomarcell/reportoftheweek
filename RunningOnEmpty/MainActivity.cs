@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Content.Res;
 using Android.Views;
 using Android.Media;
+using System;
 
 namespace RunningOnEmpty
 {
@@ -15,6 +16,10 @@ namespace RunningOnEmpty
         TextView label;
         LinearLayout layout;
         ImageView image;
+
+        int screenWidth = 0;
+        int screenHeight = 0;
+        int lastX = 0, lastY = 0;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -30,6 +35,12 @@ namespace RunningOnEmpty
             label.LongClick += LongClick; ;
             layout.Click += Click;
             layout.LongClick += LongClick;
+            image.Touch += Image_Touch;
+        }
+
+        private void Image_Touch(object sender, View.TouchEventArgs e)
+        {
+          
         }
 
         private void LongClick(object sender, View.LongClickEventArgs e)
